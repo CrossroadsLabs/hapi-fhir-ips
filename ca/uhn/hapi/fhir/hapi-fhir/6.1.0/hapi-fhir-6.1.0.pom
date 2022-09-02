@@ -6,7 +6,7 @@
 		<repository>
 			<id>internal.repo</id>
 			<name>Github Repo</name>
-			<url>file:///Users/riobennin/work/hapi-fhir</url>
+			<url>file:///Users/riobennin/work/hapi-fhir-ips</url>
 		</repository>
 </distributionManagement>
 
@@ -39,6 +39,18 @@
 	</scm>
 
 	<repositories>
+	   <repository>
+            <id>ips-github-repo</id>
+            <url>https://raw.githubusercontent/CrossroadsLabs/hapi-fhir-ips/</url>
+            <releases>
+                    <enabled>true</enabled>
+                    <updatePolicy>daily</updatePolicy>
+                </releases>
+            <snapshots>
+                    <enabled>true</enabled>
+                    <updatePolicy>always</updatePolicy>
+                </snapshots>
+        </repository>
 		<repository>
 			<id>oss-snapshot</id>
 			<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
@@ -2080,7 +2092,7 @@
 					<artifactId>maven-deploy-plugin</artifactId>
 					<version>2.8.2</version>
 					<configuration>
-						<altDeploymentRepository>internal.repo::default::file:///Users/riobennin/work/hapi-fhir</altDeploymentRepository>
+						<altDeploymentRepository>internal.repo::default::file:///Users/riobennin/work/hapi-fhir-ips</altDeploymentRepository>
 					</configuration>
 				</plugin>
 				<plugin>
