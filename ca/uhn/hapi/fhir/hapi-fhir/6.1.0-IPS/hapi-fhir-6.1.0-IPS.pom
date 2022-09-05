@@ -40,7 +40,8 @@
 	<repositories>
 	   <repository>
             <id>ips-github-repo</id>
-            <url>https://raw.githubusercontent/CrossroadsLabs/hapi-fhir-ips/</url>
+            <name>Github Repo</name>
+            <url>https://raw.githbusercontent.com/CrossroadsLabs/hapi-fhir-ips/main/</url>
             <releases>
                     <enabled>true</enabled>
                     <updatePolicy>always</updatePolicy>
